@@ -38,6 +38,7 @@ cipher_text = "".join(e.cipher(letter) for letter in message)
 roto_gen = Enigma.generate_rotor(character_set = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz .", seed = "enigma")
 
 #this will generate 99 roters and 1 reflector utilizing the character set entered above
+
 rotors = itertools.islice(roto_gen, 100)
 
 e = Enigma(rotors=rotors)
