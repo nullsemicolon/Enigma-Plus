@@ -34,6 +34,7 @@ cipher_text = "".join(e.cipher(letter) for letter in message)
 #Example Usage 3: 
 
 #Create a generator to make enigma rotors with any character_set and any seed.  The character set must be an even numbered length for the reflector to word
+
 roto_gen = Enigma.generate_rotor(character_set = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz .", seed = "enigma")
 
 #this will generate 99 roters and 1 reflector utilizing the character set entered above
